@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script type="text/javascript" src="../js/funciones.js"></script>
+    <link rel='stylesheet' type='text/css' href='../css/estilo.css'>
+    <title>Document</title>
+</head>
+ 
+<body>
+    <nav id="menuPrincipal">
+		<h1>
+			<a class="opcionMenuPrincipal" href="../html/index.html">¡ JavaScript !</a>
+		</h1>
+	</nav>
+ 
+<h2>Encuesta...</h2>
+ 
+<form>
+    <div>
+        1-¿El ElementById se usa para recupear datos con "id"? </br>
+        <input type="radio" name="p1" value="0"> Si </br>
+        <input type="radio" name="p1" value="1"> No </br>
+        <input type="radio" name="p1" value="2"> No es una varible
+
+    </div>
+    <div>
+        2-¿El section sirve para poner dar color al texto? </br>
+        <input type="radio" name="p2" value="0"> Si </br>
+        <input type="radio" name="p2" value="1"> No </br>
+        <input type="radio" name="p2" value="2"> No es una varible
+    </div>
+    <div>
+        3-¿El innerHTML sirve para separar los article? </br>
+        <input type="radio" name="p3" value="0"> Si </br>
+        <input type="radio" name="p3" value="1"> No </br>
+        <input type="radio" name="p3" value="2"> No es una varible
+    </div>
+    <div>
+        4-¿El innerHTML nos facilita la asignación de valores a controles? </br>
+        <input type="radio" name="p4" value="0"> Si </br>
+        <input type="radio" name="p4" value="1"> No </br>
+        <input type="radio" name="p4" value="2"> No es una varible
+    </div>
+    <div>
+        5-¿El parseInt sirve parsear una cadena e intentar obtener un valor numérico? </br>
+        <input type="radio" name="p5" value="0"> Si </br>
+        <input type="radio" name="p5" value="1"> No </br>
+        <input type="radio" name="p5" value="2"> No es una varible
+    </div>
+    <div>
+        <div id="error"></div>
+    </div>
+    <div>
+        <p><input type="submit" value="Enviar"></p>
+    </div>
+</form>
+<div id="resultado"></div>
+ 
+<script>
+// Creamos el evento click del boton
+document.querySelector("input[type=submit]").addEventListener("click",enviar);
+ 
+// definimos el array que contendra los respuestados de la encuesta
+var resultadoEncuesta=[];
+ 
+// definimos la variable que contiene el numero de preguntas
+var totalPreguntas=5;
+ 
+// inicializamos el array de los resultados de la forma:
+// resultadoEncuesta["p1"]=[0,0,0]
+// resultadoEncuesta["p2"]=[0,0,0]
+// ...
+inicializarArrayResultados();
+ 
+// variable que contiene el numero de encuestas realizadas
+var totalEncuestas=0;
+
+</script>
+<footer>
+    <h4>Elaborado por: José Guadalupe Gómez Gómez</h4>
+</footer>
+ 
+</body>
+</html>

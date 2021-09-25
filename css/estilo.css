@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-size: cover;
+    padding-top: 50px;
+    background:url(../imagenes/javascript.jpg) no-repeat center fixed;
+    background-color:rgb(40, 14, 66);
+}
+#menuPrincipal{
+    background-color:yellowgreen;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+.opcionMenuPrincipal{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.5rem;
+}
+.opcionMenuPrincipal:hover{
+    background-color: darkgrey;
+}
+form{
+    width: 400px;
+	border:solid 1px #00f;
+	padding: 10px;
+	margin: 10px auto;
+	text-align: left;
+    color: ivory;
+}
+#error {
+    color:Red
+}
+#resultado {
+    color:white;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+h3{
+    background-color: yellowgreen;
+	height: 50px;
+    text-align: center;
+    color: honeydew;
+}
+h4{
+    background-color: black;
+	height: 50px;
+    text-align: center;
+    color: honeydew;
+}
